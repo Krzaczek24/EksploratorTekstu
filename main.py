@@ -1,7 +1,6 @@
 # Moje nakładki / narzędzia
 import helpers.files as files
 import helpers.tools as tools
-import helpers.nltk as nltk
 
 DEBUG = True
 FORCE_GEN_DEBUG_DB = False
@@ -43,7 +42,7 @@ if FORCE_SAVE_WORDS or not files.does_all_type_files_exists(types):
     all_comments = tools.load_all_coments(f'{database_name}.{db_extension}')
     print('> Raw data loaded')
     comments = tools.get_lines_by_type(all_comments, mapping)
-    stop_words = nltk.get_custom_polish_stopwords()
+    stop_words = tools.get_custom_polish_stopwords()
     unique_words = tools.lemmatize_and_save_unique_words(comments, stop_words, types,
                                                          print_times, FIX_NEUTRAL, factor=2.0)
 else:

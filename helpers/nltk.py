@@ -54,14 +54,6 @@ def get_stopwords_by_lang(language):
             return stopwords
 
 
-def get_custom_polish_stopwords():
-    print('Loading stopwords ... ')
-    from helpers.files import load_file_lines
-    stopwords = load_file_lines("polish_stopwords.txt")
-    print('> Stopwords loaded')
-    return stopwords
-
-
 def get_stemmed_words(words):
     stemmer = nltk.stem.PorterStemmer()
 

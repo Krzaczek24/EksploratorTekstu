@@ -190,6 +190,13 @@ def load_ready_words(types):
     return unique_words
 
 
+def get_custom_polish_stopwords():
+    print('Loading stopwords ... ')
+    stopwords = files.load_file_lines("polish_stopwords.txt")
+    print('> Stopwords loaded')
+    return stopwords
+
+
 def unstringify_dictionary(lines):
     result = {}
     data = list(map(lambda x: x.rstrip('\n').split(','), lines))
@@ -199,6 +206,7 @@ def unstringify_dictionary(lines):
 
 
 def generate_debug_database(file_name, percent=1, encoding='utf-8'):
+    print('Generating debug database ... ')
     input_path = f'{files.files_directory}/default/{file_name}'
     output_path = f'{files.files_directory}/debug/{file_name}'
 
@@ -224,6 +232,8 @@ def generate_debug_database(file_name, percent=1, encoding='utf-8'):
                     counter = 0
                 line = source.readline()
                 counter += 1
+
+    print('> Debug database sucessfully generated')
 
 
 def prepare_neutral_words(unique_words, all_unique_words, factor):
