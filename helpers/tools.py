@@ -152,8 +152,8 @@ def convert_words_to_emotions(unique_words, emotion_definitions, emotion_names,
         for word in unique_words[type]:
             emotion = emotion_definitions.get(word)
             if emotion is not None:
-                word_type_emotions[type][emotion] += 1
-                word_emotion_types[emotion][type] += 1
+                word_type_emotions[type][emotion] += int(unique_words[type][word])
+                word_emotion_types[emotion][type] += int(unique_words[type][word])
 
     for key in emotion_names:
         word_emotion_types[emotion_names[key]] = word_emotion_types.pop(key)
@@ -175,6 +175,13 @@ def convert_words_to_emotions(unique_words, emotion_definitions, emotion_names,
 
 
 # <editor-fold desc="MATH OPERATIONS">
+def normalize_values(value_array, max_value=20):
+    value_array = [int(value) for value in value_array]
+    maximum = max(value_array)
+    normalized_values = [(value / maximum) * max_value for value in value_array]
+    return normalized_values;
+
+
 def get_arrays_subtraction(array1, array2):
     return list(filter(lambda x: x not in array2, array1));
 
@@ -207,7 +214,8 @@ def draw_cosinus_similarity_table(title, data):
     headers = [header for header in data]
     vectors = []
     for header in data:
-        vectors.append([row for row in [data[header][elem] for elem in data[header]]])
+        vector_data = [row for row in [data[header][elem] for elem in data[header]]]
+        vectors.append(normalize_values(vector_data, 100))
 
     from helpers.tools import cosinus_similarity
     display_data = []

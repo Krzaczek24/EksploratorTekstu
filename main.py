@@ -9,7 +9,7 @@ FORCE_SAVE_WORDS = False
 FIX_NEUTRAL = True
 SHOW_WORD_CLOUD = False
 SHOW_EMOTION_EVAL = False
-SHOW_COSINUS_SIMILARITY = False
+SHOW_COSINUS_SIMILARITY = True
 database_to_fix_name = 'polish_sentiment_dataset'
 database_name = 'fixed_database'
 db_extension = 'csv'
@@ -64,3 +64,5 @@ if SHOW_EMOTION_EVAL or SHOW_COSINUS_SIMILARITY:
     if SHOW_COSINUS_SIMILARITY:
         tools.draw_cosinus_similarity_table('Cosinus similarity for type emotions', word_type_emotions)
         tools.draw_cosinus_similarity_table('Cosinus similarity for emotion types', word_emotion_types)
+
+i = 0
