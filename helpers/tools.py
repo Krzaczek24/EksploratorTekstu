@@ -9,6 +9,14 @@ all_words_file_name = 'all'
 
 
 # <editor-fold desc="DATA PROCESSING">
+def remove_all_doubled_spaces(text):
+    prev = ' '
+    while prev != text:
+        prev = text
+        text = text.replace("  ", " ")
+    return prev
+
+
 def save_unique_words(type, words):
     lines = list(map(lambda x: f'{x[0]},{x[1]}', words.items()))
     files.save_to_file(lines, f'{type}.txt')
@@ -61,7 +69,7 @@ def normalize_words_amount(unique_words, top_elements=20, target_max_value=20):
     return normalized_words
 
 
-def lemmatize_and_save_unique_words(comments, stop_words, types, print_times=20, fix_neutral=False, factor=1.5):
+def lemmatize_and_save_unique_words(comments, types, stop_words=[], print_times=20, fix_neutral=False, factor=1.5):
     all_unique_words = {}
     unique_words = {}
     for type in types:
@@ -94,12 +102,11 @@ def lemmatize_and_save_unique_words(comments, stop_words, types, print_times=20,
             _comment = re.sub(r'[\\\d~`!@#$%^&*()_+{}|:"<>?,./;\'\[\]\-=]', '', comment).lower()
             words = nltk.get_lemmatized_polish_words(_comment, lemmatizer)
             for word in words:
-                word_lemma = re.sub('\s', r'', word.lemma_)
-                if word_lemma not in stop_words and word_lemma != '':
-                    if unique_words[type].get(word_lemma) is None:
-                        unique_words[type][word_lemma] = 1
+                if not word.is_stop and word.lemma_ != '':
+                    if unique_words[type].get(word.lemma_) is None:
+                        unique_words[type][word.lemma_] = 1
                     else:
-                        unique_words[type][word_lemma] += 1
+                        unique_words[type][word.lemma_] += 1
 
         print(f'[100.0%] {global_counter} of {comments_count}')
         print(f'> Finished processing {type} comments')
@@ -125,7 +132,9 @@ def lemmatize_and_save_unique_words(comments, stop_words, types, print_times=20,
     return unique_words
 
 
-def convert_words_to_emotions(unique_words, emotion_definitions, emotion_names, with_unclassified=False):
+def convert_words_to_emotions(unique_words, emotion_definitions, emotion_names,
+                              with_unclassified=False, with_all_in_emotions=False):
+    print('Converting words to emotions ... ')
     word_type_emotions = {}
     word_emotion_types = {}
 
@@ -155,6 +164,12 @@ def convert_words_to_emotions(unique_words, emotion_definitions, emotion_names, 
         del word_emotion_types['Unclassified']
         for type in unique_words:
             del word_type_emotions[type]['Unclassified']
+
+    if not with_all_in_emotions:
+        for emotion in word_emotion_types:
+            word_emotion_types[emotion].popitem()
+
+    print('> Conversion finished')
     return word_type_emotions, word_emotion_types
 # </editor-fold>
 
@@ -164,10 +179,12 @@ def get_arrays_subtraction(array1, array2):
     return list(filter(lambda x: x not in array2, array1));
 
 
-def cosinus_similarity(array1, array2):
+def cosinus_similarity(array1, array2, decimal_places=-1):
     arr1 = np.array(array1)
     arr2 = np.array(array2)
     cos_beta = np.dot(arr1, arr2) / (np.linalg.norm(arr1) * np.linalg.norm(arr2))
+    if decimal_places >= 0:
+        cos_beta = round(cos_beta, decimal_places)
     return cos_beta
 # </editor-fold>
 
@@ -184,6 +201,26 @@ def draw_types_and_emotions_charts(word_type_emotions, word_emotion_types):
 
     for emotion in word_emotion_types:
         drawer.draw_bar_chart(emotion, word_emotion_types[emotion])
+
+
+def draw_cosinus_similarity_table(title, data):
+    headers = [header for header in data]
+    vectors = []
+    for header in data:
+        vectors.append([row for row in [data[header][elem] for elem in data[header]]])
+
+    from helpers.tools import cosinus_similarity
+    display_data = []
+    for (index1, vector1) in enumerate(vectors):
+        result_row = [headers[index1]]
+        for (index2, vector2) in enumerate(vectors):
+            if index1 >= index2:
+                result_row.append(cosinus_similarity(vector1, vector2, 4))
+            else:
+                result_row.append('')
+        display_data.append(result_row)
+
+    drawer.draw_table(title, display_data)
 # </editor-fold>
 
 
@@ -282,13 +319,10 @@ def fix_database(input_file_name, output_file_name, lines_count=0, encoding='utf
                     return
 
                 if re.search(".+?,(\d+?\.0)?,-?[01]$", line):
-                    prev = ' '
-                    while prev != ready_line:
-                        prev = ready_line
-                        ready_line = ready_line.replace("  ", " ")
                     ready_line = re.sub('^"?(.*?)"?,(\d+?\.0)?,(-?[01])$', r'\1,\3', ready_line) + '\n'
                     parts = ready_line.split(',')
                     ready_line = ' '.join(parts[:-1]) + ',' + parts[-1]
+                    ready_line = remove_all_doubled_spaces(ready_line)
                     target.write(ready_line)
                     ready_line = ''
 

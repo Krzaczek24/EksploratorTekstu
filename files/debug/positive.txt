@@ -7,18 +7,19 @@ polecać,292
 solidny,4
 żetelny,1
 sklep,181
+ ,110
 procęt,1
 zadowolenie,6
 profesjonalizm,16
 szybkość,6
 działanie,2
-chcieć,7
+chcieć,6
 polecić,4
 zakup,90
 northocena,1
 mówić,1
 siebie,1
-móc,10
+móc,7
 dodać,2
 cenny,1
 punk,1
@@ -36,6 +37,7 @@ wysyłka,65
 mistrzostwo,1
 świat,1
 oby,5
+daleko,2
 świetny,24
 część,10
 agd,5
@@ -82,7 +84,8 @@ doprecyzować,1
 zakupowany,1
 dziękować,8
 współpraca,6
-dobry,128
+dobry,126
+inny,4
 porządek,27
 złożenie,4
 reklamacja,4
@@ -164,6 +167,7 @@ porzadku,5
 miły,30
 zleceniazakupy,1
 udany,12
+każdy,15
 wzgląd,2
 szczerze,6
 przyjemnie,3
@@ -186,7 +190,7 @@ zabezpieczyć,15
 wylaniem,1
 kolejny,32
 bezproblemowo,16
-ok,36
+co,7
 czytelny,3
 strona,22
 łatwy,5
@@ -195,7 +199,7 @@ pomy,1
 ślnie,1
 zaufanie,4
 jakościoryginalny,1
-zostać,13
+zostać,12
 całość,2
 jakikolwiek,4
 opóźnienie,3
@@ -210,7 +214,6 @@ otworzyć,1
 najprawdopodobniej,2
 transport,6
 szczęście,1
-nica,9
 stać,2
 zwykle,12
 expresowa,1
@@ -223,8 +226,6 @@ nosze,1
 raczej,2
 nigdzie,1
 indziej,2
-mieć,23
-raz,38
 skorzystać,5
 państwo,3
 usługi,6
@@ -238,15 +239,18 @@ genialny,1
 rzeczowy,1
 sumenne,1
 traktowanie,1
+mój,9
 gorąco,18
 praktycznie,2
 dzienie,1
 gotówka,1
 wskazany,1
 konto,3
+bardzo,16
 kupować,7
 mniej,1
 godzina,5
+sam,8
 jakościowo,1
 wygodny,1
 zdjęcie,10
@@ -284,7 +288,7 @@ informacja,21
 nt,2
 stan,2
 uszkodzenie,4
-czas,27
+czas,25
 torebka,3
 wielkość,1
 kolor,2
@@ -337,7 +341,6 @@ eobuwia,1
 wrócić,2
 sklepsklep,1
 wg,2
-wszystek,10
 ewentualny,2
 dziać,3
 pozytywnie,7
@@ -376,7 +379,6 @@ blyskawiczna,3
 duzym,1
 wrazeniem,1
 zastrzeżenie,14
-jedynie,3
 szkoda,4
 kwotowo,1
 bona,1
@@ -399,6 +401,7 @@ pozytywny,4
 widać,2
 zależeć,2
 korzystanie,1
+dobro,2
 wyszukiwarkabardzo,1
 niesamowity,1
 perfekcyjny,2
@@ -408,7 +411,6 @@ dbałość,1
 dziecko,2
 dorosły,1
 okazja,2
-często,6
 znaleźć,4
 okazyjny,1
 wliczyć,1
@@ -500,7 +502,6 @@ rozwijać,1
 liczba,1
 zapytanie,1
 dostępność,4
-dobro,1
 minusypelen,1
 profesjonalizmszybka,1
 standard,1
@@ -516,6 +517,8 @@ możliwość,8
 wybrania,1
 sfd,2
 kilkanaście,1
+raz,14
+być,7
 całkowicie,3
 bogaty,4
 oferta,10
@@ -523,7 +526,6 @@ wzorowo,1
 zamowieniem,3
 ekspresowosprawny,1
 terminowy,2
-choć,1
 promocja,4
 dzwonić,1
 umówić,1
@@ -536,6 +538,8 @@ cenieszybko,1
 bezroblemowo,1
 należeć,5
 ciagu,2
+mieć,5
+jeden,2
 nazwa,1
 skrót,1
 aminokwas,1
@@ -547,6 +551,7 @@ chwila,2
 dostawać,1
 sklepszybka,1
 zamówieniempolecam,2
+  ,5
 rok,2
 zastrzeżeńrzetelna,1
 info,2
@@ -585,6 +590,7 @@ przesylki,2
 oczywiscie,2
 ogólnie,6
 ps,1
+jakiś,3
 krem,1
 oliwka,1
 tłusty,1
@@ -603,6 +609,7 @@ kosmetyk,2
 niemal,1
 hurtowy,1
 liczny,1
+często,1
 zapas,1
 idealnieszybka,1
 terminowo,3
@@ -621,6 +628,7 @@ niewątpliwie,1
 finansowo,1
 wpłata,1
 podmienić,1
+który,2
 koszyk,1
 drogi,1
 atut,2
@@ -687,6 +695,7 @@ rodzina,1
 stawać,1
 brak,4
 sprzedawać,4
+dobrze,1
 kosmetyka,3
 zniszczyć,2
 przeć,1
@@ -730,6 +739,7 @@ zainteresowanie,1
 załatwianie,1
 sprawa,1
 reklamacyjny,1
+żaden,1
 płynny,1
 skuteczny,1
 p,3
@@ -770,6 +780,7 @@ uprzejmy,2
 zorientować,1
 temat,1
 witambardzo,1
+dobra,1
 chętnie,2
 empikcom,1
 uprzejmie,1
@@ -784,7 +795,6 @@ wrażenie,1
 interesować,1
 polityka,1
 wymiar,1
-bym,1
 wybrać,2
 osobisty,5
 gra,1
@@ -833,6 +843,7 @@ wieloletni,1
 początek,3
 istnienie,1
 prawda,1
+mało,1
 racja,1
 profil,1
 praca,1
@@ -862,7 +873,6 @@ przelać,1
 srode,1
 piątka,2
 odbieralam,1
-swój,4
 zamówieniejestem,1
 megazadowolona,1
 zwłaszcza,1
@@ -879,9 +889,11 @@ informować,3
 otym,1
 podkreślić,1
 ciąg,1
+dwa,3
 pelnowartosciowy,1
 wyszukiwarka,1
 allegro,1
+coś,1
 northpl,1
 poprostu,1
 promocjeszkoda,1
@@ -890,6 +902,7 @@ polski,1
 perfekcja,1
 książkowy,1
 wiedzieć,2
+sposób,2
 wygórowany,1
 wielbić,1
 bezbłędny,1
@@ -923,6 +936,7 @@ spodziewać,1
 tydzień,1
 roboczy,1
 grzebać,1
+swój,3
 przesyłać,1
 działo,2
 morela,4
@@ -955,6 +969,7 @@ cel,1
 uiszczenia,1
 opłata,1
 przeoczyć,1
+ten,2
 opcja,4
 założenie,1
 dotrzymać,1
@@ -1009,6 +1024,7 @@ krótki,1
 warszawski,1
 kosztować,1
 kwota,1
+zł,2
 nabijanie,1
 sporo,1
 zadawalać,1
@@ -1108,6 +1124,7 @@ obawiać,1
 wpłacać,1
 otrzymania,1
 przesyłkikontakt,1
+pani,1
 pomocnepolecam,1
 soczewka,3
 miesiąc,1
@@ -1132,6 +1149,7 @@ postęp,1
 zamówieniaświetny,1
 przekonać,1
 warto,1
+taki,3
 kanałemjeszcze,1
 ekipa,1
 darmo,1
@@ -1227,10 +1245,10 @@ porządny,1
 nowość,1
 szczeciński,1
 niejednokrotnie,1
+wasz,1
 zbudować,1
 program,1
 obróbka,1
-oko,1
 fotoobrazy,1
 ładny,1
 składać,1
@@ -1262,6 +1280,7 @@ ilość,1
 obejść,1
 ustawiać,1
 parametr,1
+nic,1
 zająć,1
 źle,1
 obchodzić,2

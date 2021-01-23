@@ -8,7 +8,7 @@ FORCE_FIX_DATABASE = False
 FORCE_SAVE_WORDS = False
 FIX_NEUTRAL = True
 SHOW_WORD_CLOUD = False
-SHOW_EMOTION_EVAL = False
+SHOW_EMOTION_EVAL = True
 SHOW_COSINUS_SIMILARITY = True
 database_to_fix_name = 'polish_sentiment_dataset'
 database_name = 'fixed_database'
@@ -43,9 +43,9 @@ if FORCE_SAVE_WORDS or not files.does_all_type_files_exists(types):
     all_comments = tools.load_all_coments(f'{database_name}.{db_extension}')
     print('> Raw data loaded')
     comments = tools.get_comments_by_type(all_comments, mapping)
-    stop_words = tools.get_custom_polish_stopwords()
-    unique_words = tools.lemmatize_and_save_unique_words(comments, stop_words, types,
-                                                         print_times, FIX_NEUTRAL, factor=2.0)
+    # stop_words = tools.get_custom_polish_stopwords()
+    unique_words = tools.lemmatize_and_save_unique_words(comments, types,  # stop_words,
+                                                         print_times=print_times, fix_neutral=FIX_NEUTRAL, factor=2.0)
 else:
     unique_words = tools.load_ready_words(types)
 
@@ -53,12 +53,14 @@ if SHOW_WORD_CLOUD:
     top_words = tools.normalize_words_amount(unique_words, top_elements=200, target_max_value=20)
     tools.draw_word_clouds(top_words)
 
-if SHOW_EMOTION_EVAL:
+if SHOW_EMOTION_EVAL or SHOW_COSINUS_SIMILARITY:
     emotion_definitions = tools.load_word_emotions()
     word_type_emotions, word_emotion_types = tools.convert_words_to_emotions(unique_words,
                                                                              emotion_definitions,
                                                                              emotion_names)
-    tools.draw_types_and_emotions_charts(word_type_emotions, word_emotion_types)
+    if SHOW_EMOTION_EVAL:
+        tools.draw_types_and_emotions_charts(word_type_emotions, word_emotion_types)
 
-if SHOW_COSINUS_SIMILARITY:
-    False
+    if SHOW_COSINUS_SIMILARITY:
+        tools.draw_cosinus_similarity_table('Cosinus similarity for type emotions', word_type_emotions)
+        tools.draw_cosinus_similarity_table('Cosinus similarity for emotion types', word_emotion_types)

@@ -13,12 +13,13 @@ introligatorski,1
 wypadać,1
 kartka,1
 uzasadnienie,1
+ ,56
 uszkodzenie,1
 mechaniczny,1
 egzemplarz,1
 otrzymać,6
 dobry,7
-próbowałem,1
+próbować,1
 argumentowałem,1
 postawa,1
 arosa,1
@@ -42,6 +43,7 @@ długo,3
 wiece,3
 musieć,2
 kupic,1
+inny,5
 apteka,5
 rzecz,2
 zamówić,5
@@ -73,7 +75,6 @@ kurierski,2
 dostalem,1
 przeslalem,1
 obsludze,1
-nica,3
 oczywiscie,1
 poszla,1
 niechciany,1
@@ -84,7 +85,7 @@ folia,2
 poplamić,1
 zalać,1
 drugi,2
-mieć,33
+mieć,8
 zniszczyć,1
 okładka,1
 pozaginać,1
@@ -92,16 +93,15 @@ róg,1
 oddać,2
 otworzyć,1
 dom,4
+sam,6
 przypadek,1
 płyta,2
-tzw,1
 seria,1
 eco,1
 plastikowy,1
 pudełko,1
 papierowy,1
 kiedyś,3
-wszystek,2
 sklep,18
 internetowy,2
 porządnie,1
@@ -144,12 +144,13 @@ opcja,1
 wymiana,1
 dniowy,3
 minąć,1
+daleko,2
 podobno,2
 wysłać,4
 trwać,1
 dniteraz,1
 żałować,3
-raz,10
+raz,4
 odstąpić,1
 zakup,3
 solidny,1
@@ -170,12 +171,12 @@ doba,1
 godzina,1
 roboczy,2
 rzeczywistość,2
-móc,8
 okres,1
 niby,2
 drobiazg,1
+który,2
 zależeć,1
-zostać,6
+zostać,5
 wkręcić,1
 kryty,1
 absolutnie,1
@@ -185,6 +186,7 @@ poprosić,1
 temat,2
 produkt,4
 zadzwonić,2
+co,4
 mijać,1
 otrzymywać,3
 kolejny,3
@@ -200,7 +202,7 @@ terminowy,1
 totalny,2
 porażka,1
 beznadzieja,1
-jedynie,1
+móc,4
 określić,1
 wyszykować,1
 promocja,1
@@ -217,6 +219,7 @@ widnieć,1
 systema,1
 sztuk,1
 sprzedać,1
+dwa,1
 różny,1
 paliwo,1
 polecamostatnio,1
@@ -227,7 +230,6 @@ pieniądz,2
 skusić,1
 ponownie,1
 merlinie,1
-xii,5
 poinformować,2
 pośrednictwo,2
 rucho,1
@@ -251,7 +253,6 @@ wyjechać,1
 dostarczyć,1
 koniec,6
 święto,1
-choć,1
 odżywka,2
 włos,2
 potwierdzenie,1
@@ -262,6 +263,7 @@ odesłać,1
 zwrócić,2
 kwota,5
 mały,2
+przez,2
 koszt,4
 zwrotny,2
 przesłanie,1
@@ -277,6 +279,7 @@ upominać,1
 dwukrotnie,1
 różnica,1
 przesunąć,1
+mój,2
 nadwyżka,2
 konto,2
 wykorzystanie,1
@@ -286,7 +289,8 @@ skandal,1
 zamiar,1
 korzystać,1
 usługi,1
-chcieć,9
+chcieć,6
+cały,4
 wysłanie,1
 kategoryczny,1
 żądanie,1
@@ -294,6 +298,7 @@ pełny,2
 przelew,1
 suma,1
 potem,8
+mało,1
 znany,1
 duży,3
 merlin,1
@@ -336,6 +341,7 @@ konsultant,1
 potrafić,1
 odpowiedzieć,1
 stać,2
+każdy,1
 odpowiedź,1
 pora,1
 wyjaśnić,1
@@ -393,13 +399,14 @@ widok,1
 cześć,2
 imię,1
 maciek,1
-rok,11
+rok,10
 biseksualistą,1
 dziwny,2
 pierwszy,3
 spędzić,1
 mężczyzna,1
 tarnowa,3
+pan,3
 okolica,1
 zapraszać,1
 narazie,1
@@ -429,11 +436,13 @@ jarosław,1
 gowin,1
 skrajny,1
 liberał,1
+kto,2
 lud,4
 barbara,1
 dolniak,1
 wicemarszałek,1
 sejm,1
+  ,4
 …,5
 obrada,1
 demokracja,2
@@ -453,6 +462,7 @@ trefny,1
 imigrant,1
 woda,3
 młyn,1
+wasz,1
 poparcie,1
 znać,2
 taśma,1
@@ -468,8 +478,9 @@ sto,1
 tuskowi,1
 studio,1
 symbol,1
+  ,1
 cholera,1
-polska,2
+polska,3
 wg,1
 mordor,1
 ruina,1
@@ -478,8 +489,10 @@ rozwalić,1
 suprajsss,1
 j,1
 bronić,2
+nasz,1
 suwerenność,1
 nawrocisz,1
+coś,1
 rozumieć,4
 mianować,1
 spółka,1
@@ -488,6 +501,7 @@ efekt,1
 żyć,1
 dać,9
 rada,1
+jakiś,2
 ustawa,1
 klepnąć,1
 noc,1
@@ -502,6 +516,7 @@ obesrać,1
 twardy,1
 dyska,1
 pamiętać,1
+być,4
 mięka,1
 faja,1
 przyznać,2
@@ -578,6 +593,7 @@ karpa,1
 fajny,2
 glonojady,3
 kom,1
+zł,1
 mln,1
 masti,1
 pływać,1
@@ -606,7 +622,7 @@ jeż,2
 zjeść,2
 naprawić,1
 uciekać,2
-polski,3
+polski,2
 rozjebać,1
 osoba,4
 wymyslila,1
@@ -649,7 +665,6 @@ znaleźć,3
 you,1
 tube,1
 omg,1
-tys,3
 dyslajkow,1
 dań,1
 dupa,1
@@ -661,6 +676,7 @@ ministrant,1
 dół,3
 konewkaa,1
 januszem,1
+taki,7
 gówno,2
 widzieć,4
 sowęjuż,1
@@ -720,7 +736,7 @@ marzence,1
 rozpierdoliłem,1
 ręke,1
 plastik,2
-wiedzieć,6
+wiedzieć,5
 zrobić,6
 stawać,2
 krzesło,1
@@ -730,7 +746,6 @@ ukochany,1
 poka,2
 sowe,1
 zmiana,2
-kierunek,1
 wystrzelić,1
 rakieta,1
 eutanazja,1
@@ -758,11 +773,11 @@ pozytywny,1
 kobieta,2
 dystans,1
 siebie,1
+dobrze,2
 kurwa,18
 podnosić,1
 papierek,1
 chodnik,1
-coraz,2
 zamiast,2
 zareagować,2
 poważnie,1
@@ -792,7 +807,6 @@ rozwiazali,1
 wstretny,1
 problem,1
 pokojowo,1
-cal,1
 zamieniać,1
 rasistow,1
 faszystow,1
@@ -866,7 +880,7 @@ głowa,3
 bedziesz,1
 ruchać,1
 dupe,1
-dziewczynka,1
+dziewczynko,1
 bałagan,1
 jebany,1
 powoli,1
@@ -911,9 +925,9 @@ ziemski,1
 propagować,1
 izraelu,1
 nienawiść,1
-plugawy,2
+najplugawsza,1
+plugawy,1
 skurwysyn,2
-bym,3
 podpalil,1
 klatka,1
 smierc,1
@@ -977,6 +991,7 @@ pudło,1
 serio,1
 cooo,1
 dziać,1
+ten,2
 ludzmi,1
 nosz,1
 kurde,2
@@ -1056,7 +1071,6 @@ skonczy,1
 straż,1
 miejski,1
 jp,1
-ok,1
 jechać,1
 ameryk,1
 broń,1
@@ -1252,6 +1266,7 @@ skakać,1
 dziura,1
 cwaniak,1
 zapomnieliscie,1
+jaki,1
 zyjemy,1
 ujść,1
 płaz,1

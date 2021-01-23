@@ -25,7 +25,7 @@ def tokenize_text_words(text, to_lower=False, disallowed_chars=[]):
     tokenized_words = nltk.tokenize.word_tokenize(text)
 
     if len(disallowed_chars) > 0:
-        filtered_words = [];
+        filtered_words = []
         for word in tokenized_words:
             if not any(char in word for char in disallowed_chars):
                 filtered_words.append(word)
@@ -36,7 +36,6 @@ def tokenize_text_words(text, to_lower=False, disallowed_chars=[]):
 
 def get_words_frequency(words):
     words_frequency = nltk.probability.FreqDist(words)
-
     return words_frequency
 
 

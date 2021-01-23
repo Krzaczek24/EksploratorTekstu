@@ -7,6 +7,7 @@ polecać,2
 solidny,2
 żetelny,1
 sklep,2
+ ,2
 procęt,1
 zadowolenie,1
 profesjonalizm,1
@@ -36,6 +37,7 @@ wysyłka,2
 mistrzostwo,1
 świat,2
 oby,2
+daleko,2
 świetny,1
 część,1
 agd,1
@@ -83,6 +85,7 @@ zakupowany,1
 dziękować,1
 współpraca,1
 dobry,2
+inny,2
 porządek,1
 złożenie,2
 reklamacja,2
@@ -164,6 +167,7 @@ porzadku,1
 miły,1
 zleceniazakupy,1
 udany,1
+każdy,2
 wzgląd,2
 szczerze,1
 przyjemnie,1
@@ -186,7 +190,7 @@ zabezpieczyć,2
 wylaniem,1
 kolejny,2
 bezproblemowo,1
-ok,2
+co,2
 czytelny,1
 strona,1
 łatwy,1
@@ -210,7 +214,6 @@ otworzyć,2
 najprawdopodobniej,1
 transport,1
 szczęście,1
-nica,2
 stać,2
 zwykle,1
 expresowa,1
@@ -223,8 +226,6 @@ nosze,1
 raczej,1
 nigdzie,1
 indziej,1
-mieć,2
-raz,2
 skorzystać,2
 państwo,1
 usługi,2
@@ -238,15 +239,18 @@ genialny,1
 rzeczowy,1
 sumenne,1
 traktowanie,1
+mój,2
 gorąco,1
 praktycznie,1
 dzienie,2
 gotówka,1
 wskazany,1
 konto,2
+bardzo,1
 kupować,2
 mniej,1
 godzina,2
+sam,2
 jakościowo,1
 wygodny,1
 zdjęcie,2
@@ -326,7 +330,7 @@ ważny,2
 odnośnie,2
 okucie,1
 jednoznaczny,1
-cal,2
+cal,1
 ulubiony,1
 obuwniczy,1
 duuuży,1
@@ -337,7 +341,6 @@ eobuwia,1
 wrócić,1
 sklepsklep,1
 wg,2
-wszystek,2
 ewentualny,1
 dziać,2
 pozytywnie,1
@@ -376,7 +379,6 @@ blyskawiczna,1
 duzym,1
 wrazeniem,1
 zastrzeżenie,1
-jedynie,2
 szkoda,2
 kwotowo,1
 bona,1
@@ -399,6 +401,7 @@ pozytywny,2
 widać,2
 zależeć,2
 korzystanie,2
+dobro,1
 wyszukiwarkabardzo,1
 niesamowity,1
 perfekcyjny,1
@@ -408,7 +411,6 @@ dbałość,1
 dziecko,2
 dorosły,1
 okazja,1
-często,1
 znaleźć,2
 okazyjny,1
 wliczyć,1
@@ -500,7 +502,6 @@ rozwijać,1
 liczba,1
 zapytanie,2
 dostępność,1
-dobro,1
 minusypelen,1
 profesjonalizmszybka,1
 standard,1
@@ -516,6 +517,8 @@ możliwość,2
 wybrania,1
 sfd,1
 kilkanaście,1
+raz,2
+być,2
 całkowicie,1
 bogaty,2
 oferta,1
@@ -523,7 +526,6 @@ wzorowo,1
 zamowieniem,1
 ekspresowosprawny,1
 terminowy,2
-choć,2
 promocja,2
 dzwonić,2
 umówić,2
@@ -536,6 +538,8 @@ cenieszybko,1
 bezroblemowo,1
 należeć,1
 ciagu,1
+mieć,2
+jeden,1
 nazwa,1
 skrót,2
 aminokwas,1
@@ -547,6 +551,7 @@ chwila,1
 dostawać,1
 sklepszybka,1
 zamówieniempolecam,1
+  ,2
 rok,2
 zastrzeżeńrzetelna,1
 info,1
@@ -585,6 +590,7 @@ przesylki,1
 oczywiscie,2
 ogólnie,2
 ps,2
+jakiś,2
 krem,1
 oliwka,1
 tłusty,1
@@ -603,6 +609,7 @@ kosmetyk,1
 niemal,1
 hurtowy,1
 liczny,1
+często,1
 zapas,1
 idealnieszybka,1
 terminowo,1
@@ -621,6 +628,7 @@ niewątpliwie,1
 finansowo,1
 wpłata,1
 podmienić,1
+który,2
 koszyk,1
 drogi,1
 atut,1
@@ -687,6 +695,7 @@ rodzina,2
 stawać,2
 brak,2
 sprzedawać,1
+dobrze,2
 kosmetyka,1
 zniszczyć,2
 przeć,1
@@ -730,6 +739,7 @@ zainteresowanie,1
 załatwianie,1
 sprawa,2
 reklamacyjny,1
+żaden,1
 płynny,1
 skuteczny,1
 p,1
@@ -770,6 +780,7 @@ uprzejmy,1
 zorientować,1
 temat,2
 witambardzo,1
+dobra,1
 chętnie,1
 empikcom,1
 uprzejmie,1
@@ -784,7 +795,6 @@ wrażenie,1
 interesować,1
 polityka,1
 wymiar,1
-bym,2
 wybrać,1
 osobisty,1
 gra,1
@@ -833,6 +843,7 @@ wieloletni,2
 początek,2
 istnienie,1
 prawda,2
+mało,2
 racja,2
 profil,1
 praca,1
@@ -862,7 +873,6 @@ przelać,1
 srode,1
 piątka,1
 odbieralam,1
-swój,2
 zamówieniejestem,1
 megazadowolona,1
 zwłaszcza,1
@@ -879,9 +889,11 @@ informować,1
 otym,1
 podkreślić,1
 ciąg,2
+dwa,2
 pelnowartosciowy,1
 wyszukiwarka,1
 allegro,1
+coś,2
 northpl,1
 poprostu,1
 promocjeszkoda,1
@@ -890,6 +902,7 @@ polski,2
 perfekcja,1
 książkowy,1
 wiedzieć,2
+sposób,1
 wygórowany,1
 wielbić,1
 bezbłędny,1
@@ -923,6 +936,7 @@ spodziewać,1
 tydzień,2
 roboczy,2
 grzebać,1
+swój,2
 przesyłać,1
 działo,2
 morela,1
@@ -955,6 +969,7 @@ cel,1
 uiszczenia,1
 opłata,1
 przeoczyć,1
+ten,2
 opcja,2
 założenie,1
 dotrzymać,1
@@ -1009,6 +1024,7 @@ krótki,1
 warszawski,1
 kosztować,2
 kwota,2
+zł,2
 nabijanie,1
 sporo,1
 zadawalać,1
@@ -1108,6 +1124,7 @@ obawiać,1
 wpłacać,1
 otrzymania,1
 przesyłkikontakt,1
+pani,1
 pomocnepolecam,1
 soczewka,1
 miesiąc,2
@@ -1132,6 +1149,7 @@ postęp,1
 zamówieniaświetny,1
 przekonać,1
 warto,1
+taki,2
 kanałemjeszcze,1
 ekipa,2
 darmo,1
@@ -1227,10 +1245,10 @@ porządny,1
 nowość,1
 szczeciński,1
 niejednokrotnie,1
+wasz,2
 zbudować,1
 program,2
 obróbka,1
-oko,2
 fotoobrazy,1
 ładny,2
 składać,1
@@ -1262,6 +1280,7 @@ ilość,1
 obejść,1
 ustawiać,1
 parametr,1
+nic,1
 zająć,1
 źle,2
 obchodzić,2
@@ -1304,7 +1323,7 @@ kartka,1
 uzasadnienie,1
 mechaniczny,1
 egzemplarz,1
-próbowałem,1
+próbować,1
 argumentowałem,1
 postawa,1
 arosa,1
@@ -1337,7 +1356,6 @@ pozaginać,1
 róg,1
 oddać,1
 płyta,1
-tzw,1
 seria,1
 eco,1
 plastikowy,1
@@ -1405,7 +1423,6 @@ paliwo,1
 polecamostatnio,1
 skusić,1
 merlinie,1
-xii,1
 pośrednictwo,1
 rucho,1
 świętamina,1
@@ -1421,6 +1438,7 @@ odżywka,1
 włos,1
 wyczekiwać,1
 odesłać,1
+przez,1
 przesłanie,1
 dokument,1
 nadmieniałam,1
@@ -1435,6 +1453,7 @@ nadwyżka,1
 wykorzystanie,1
 skandal,1
 zamiar,1
+cały,1
 wysłanie,1
 kategoryczny,1
 żądanie,1
@@ -1483,6 +1502,7 @@ kat,1
 działalność,1
 gospodarczy,1
 założyć,1
+oko,1
 obwód,1
 czaszka,1
 prowadzić,1
@@ -1509,6 +1529,7 @@ biseksualistą,1
 spędzić,1
 mężczyzna,1
 tarnowa,1
+pan,1
 okolica,1
 zapraszać,1
 narazie,1
@@ -1536,6 +1557,7 @@ jarosław,1
 gowin,1
 skrajny,1
 liberał,1
+kto,1
 lud,1
 barbara,1
 dolniak,1
@@ -1573,6 +1595,7 @@ sto,1
 tuskowi,1
 studio,1
 symbol,1
+  ,1
 cholera,1
 polska,1
 mordor,1
@@ -1582,6 +1605,7 @@ rozwalić,1
 suprajsss,1
 j,1
 bronić,1
+nasz,1
 suwerenność,1
 nawrocisz,1
 mianować,1
@@ -1732,7 +1756,6 @@ sexmasterka,1
 you,1
 tube,1
 omg,1
-tys,1
 dyslajkow,1
 dań,1
 dupa,1
@@ -1805,7 +1828,6 @@ włącze,1
 ukochany,1
 poka,1
 sowe,1
-kierunek,1
 wystrzelić,1
 rakieta,1
 eutanazja,1
@@ -1825,7 +1847,6 @@ kurwa,1
 podnosić,1
 papierek,1
 chodnik,1
-coraz,1
 zareagować,1
 poważnie,1
 nagrywać,1
@@ -1918,7 +1939,7 @@ głowa,1
 bedziesz,1
 ruchać,1
 dupe,1
-dziewczynka,1
+dziewczynko,1
 bałagan,1
 jebany,1
 powoli,1
@@ -1961,6 +1982,7 @@ ziemski,1
 propagować,1
 izraelu,1
 nienawiść,1
+najplugawsza,1
 plugawy,1
 skurwysyn,1
 podpalil,1
@@ -2274,6 +2296,7 @@ skakać,1
 dziura,1
 cwaniak,1
 zapomnieliscie,1
+jaki,1
 zyjemy,1
 ujść,1
 płaz,1
