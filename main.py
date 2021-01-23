@@ -8,7 +8,8 @@ FORCE_FIX_DATABASE = False
 FORCE_SAVE_WORDS = False
 FIX_NEUTRAL = True
 SHOW_WORD_CLOUD = False
-SHOW_EMOTION_EVAL = True
+SHOW_EMOTION_EVAL = False
+SHOW_COSINUS_SIMILARITY = True
 database_to_fix_name = 'polish_sentiment_dataset'
 database_name = 'fixed_database'
 db_extension = 'csv'
@@ -41,7 +42,7 @@ if FORCE_SAVE_WORDS or not files.does_all_type_files_exists(types):
     print('Loading raw data from database ... ')
     all_comments = tools.load_all_coments(f'{database_name}.{db_extension}')
     print('> Raw data loaded')
-    comments = tools.get_lines_by_type(all_comments, mapping)
+    comments = tools.get_comments_by_type(all_comments, mapping)
     stop_words = tools.get_custom_polish_stopwords()
     unique_words = tools.lemmatize_and_save_unique_words(comments, stop_words, types,
                                                          print_times, FIX_NEUTRAL, factor=2.0)
@@ -58,3 +59,6 @@ if SHOW_EMOTION_EVAL:
                                                                              emotion_definitions,
                                                                              emotion_names)
     tools.draw_types_and_emotions_charts(word_type_emotions, word_emotion_types)
+
+if SHOW_COSINUS_SIMILARITY:
+    False
