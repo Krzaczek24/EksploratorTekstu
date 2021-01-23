@@ -2,14 +2,14 @@
 import helpers.files as files
 import helpers.tools as tools
 
-DEBUG = True
+DEBUG = False
 FORCE_GEN_DEBUG_DB = False
 FORCE_FIX_DATABASE = False
 FORCE_SAVE_WORDS = False
 FIX_NEUTRAL = True
 SHOW_WORD_CLOUD = False
-SHOW_EMOTION_EVAL = True
-SHOW_COSINUS_SIMILARITY = True
+SHOW_EMOTION_EVAL = False
+SHOW_COSINUS_SIMILARITY = False
 database_to_fix_name = 'polish_sentiment_dataset'
 database_name = 'fixed_database'
 db_extension = 'csv'

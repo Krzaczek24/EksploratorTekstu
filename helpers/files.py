@@ -4,7 +4,7 @@ import numpy as np
 from os import listdir
 
 files_directory = 'files'
-sub_folder = 'standard'
+sub_folder = 'default'
 
 
 def does_file_exists(file_name):
