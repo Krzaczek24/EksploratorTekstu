@@ -1,7 +1,9 @@
+import helpers.drawer as drawer
 import helpers.nltk as nltk
 import helpers.files as files
 import numpy as np
 import re
+import math
 
 all_words_file_name = 'all'
 
@@ -115,7 +117,7 @@ def lemmatize_and_save_unique_words(comments, stop_words, types, print_times=20,
     for type in unique_words:
         comments_count = len(comments[type])
 
-        print(f'Processing {comments_count} {type.rstrip("_debug")} comments ... ')
+        print(f'Processing {comments_count} {type} comments ... ')
         print(f'[0.0%] 0 of {comments_count}')
 
         percent = 0.0
@@ -232,3 +234,76 @@ def prepare_neutral_words(unique_words, all_unique_words, factor):
             if max(positive, negative) <= min(positive, negative) * factor:
                 neutral = int((positive + negative) / 2)
                 unique_words['neutral'][word] = neutral
+
+
+def normalize_words_amount(unique_words, top_elements=20, target_max_value=20):
+    unique_words_copy = unique_words.copy()
+    normalized_words = {}
+
+    for type in unique_words_copy:
+        normalized_words[type] = {}
+        max_value = max([int(unique_words_copy[type][word]) for word in unique_words_copy[type]])
+        ordered = list(sorted(unique_words_copy[type].items(), key=lambda item: int(item[1])))
+        top_ordered = dict(ordered[-top_elements:][::-1])
+        for word in top_ordered:
+            word_count = int(top_ordered[word])
+            word_normalized_count = math.ceil((word_count / max_value) * target_max_value)
+            normalized_words[type][word] = word_normalized_count
+
+    return normalized_words
+
+
+def draw_word_clouds(unique_words):
+    for type in unique_words:
+        drawer.draw_word_cloud(type, unique_words[type])
+
+
+def load_word_emotions():
+    word_emotions = {}
+    lines = files.load_file_lines('nawl-analysis.csv')[1:]
+    for line in lines:
+        data = line.split(',')
+        word_emotions[data[0]] = data[1]
+
+    return word_emotions
+
+
+def convert_words_to_emotions(unique_words, emotion_definitions, emotion_names, with_unclassified=False):
+    word_type_emotions = {}
+    word_emotion_types = {}
+
+    for type in unique_words:
+        word_type_emotions[type] = {}
+        for key in emotion_names:
+            word_type_emotions[type][key] = 0
+
+    for key in emotion_names:
+        word_emotion_types[key] = {}
+        for type in unique_words:
+            word_emotion_types[key][type] = 0
+
+    for type in unique_words:
+        for word in unique_words[type]:
+            emotion = emotion_definitions.get(word)
+            if emotion is not None:
+                word_type_emotions[type][emotion] += 1
+                word_emotion_types[emotion][type] += 1
+
+    for key in emotion_names:
+        word_emotion_types[emotion_names[key]] = word_emotion_types.pop(key)
+        for type in unique_words:
+            word_type_emotions[type][emotion_names[key]] = word_type_emotions[type].pop(key)
+
+    if not with_unclassified:
+        del word_emotion_types['Unclassified']
+        for type in unique_words:
+            del word_type_emotions[type]['Unclassified']
+    return word_type_emotions, word_emotion_types
+
+
+def draw_types_and_emotions_charts(word_type_emotions, word_emotion_types):
+    for type in word_type_emotions:
+        drawer.draw_bar_chart(type, word_type_emotions[type])
+
+    for emotion in word_emotion_types:
+        drawer.draw_bar_chart(emotion, word_emotion_types[emotion])

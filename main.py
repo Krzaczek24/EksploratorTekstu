@@ -5,17 +5,24 @@ import helpers.nltk as nltk
 
 DEBUG = True
 FORCE_GEN_DEBUG_DB = False
-FORCE_FIX_DATABASE = True
-FORCE_SAVE_WORDS = True
+FORCE_FIX_DATABASE = False
+FORCE_SAVE_WORDS = False
 FIX_NEUTRAL = True
+SHOW_WORD_CLOUD = False
+SHOW_EMOTION_EVAL = True
 database_to_fix_name = 'polish_sentiment_dataset'
 database_name = 'fixed_database'
 db_extension = 'csv'
 print_times = 20
-mapping = {
-    1: 'positive',
-    0: 'neutral',
-    -1: 'negative'
+mapping = {1: 'positive', 0: 'neutral', -1: 'negative'}
+emotion_names = {
+    'H': 'Happiness',
+    'A': 'Anger',
+    'S': 'Sadness',
+    'F': 'Fear',
+    'D': 'Disgust',
+    'N': 'Neutral',
+    'U': 'Unclassified'
 }
 types = [mapping[map] for map in mapping]
 unique_words = {}
@@ -42,4 +49,13 @@ if FORCE_SAVE_WORDS or not files.does_all_type_files_exists(types):
 else:
     unique_words = tools.load_ready_words(types)
 
-i = 0
+if SHOW_WORD_CLOUD:
+    top_words = tools.normalize_words_amount(unique_words, top_elements=200, target_max_value=20)
+    tools.draw_word_clouds(top_words)
+
+if SHOW_EMOTION_EVAL:
+    emotion_definitions = tools.load_word_emotions()
+    word_type_emotions, word_emotion_types = tools.convert_words_to_emotions(unique_words,
+                                                                             emotion_definitions,
+                                                                             emotion_names)
+    tools.draw_types_and_emotions_charts(word_type_emotions, word_emotion_types)
